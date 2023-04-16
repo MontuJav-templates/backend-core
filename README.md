@@ -1,2 +1,15 @@
 # backend-core
-Repository to develop the core of our TT project
+Repository to develop the core of our TT project.
+
+The following order will be followed to start developing this system.
+
+- [ ] Intialize project
+- [ ] Start developing
+    - [ ] Start LAS files uploading
+    - [ ] Start DB designing
+- [ ] LAS files uploading
+- [ ] Processing LAS files
+- [ ] Plotting crossplots
+- [ ] Clustering crossplots
+
+This TODO list can change and some other implementation should be also carried out (like DB designing, architecture designing, tech docs, etc.)
