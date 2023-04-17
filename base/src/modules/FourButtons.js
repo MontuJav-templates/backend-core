@@ -39,7 +39,7 @@ function FourButtons() {
 
     return (
         <div>
-            <input type="file" onChange={handleFileSelect} />
+            <input type="file" onChange={handleFileSelect} accept='.las' />
             <br></br>
             <Button variant="secondary" onClick={processFile}>Process LAS file</Button>{' '}
             <Button variant="success">Plot crossplot</Button>{' '}
