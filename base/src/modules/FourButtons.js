@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import UploadButton from './buttons/UploadButton';
 
 function FourButtons() {
     const [selectedFile, setSelectedFile] = useState(null);
   
-    const handleFileSelect = (file) => {
-      setSelectedFile(file);
-      console.log(selectedFile);
-      // TODO: Upload file
+    const handleFileSelect = (event) => {
+      setSelectedFile(event.target.files[0]);
     };
+
+    const processFile = () => {
+        console.log(selectedFile);
+    }
 
     return (
         <div>
-        <UploadButton onFileSelect={handleFileSelect} />
-        <Button variant="secondary">Process LAS file</Button>{' '}
+        <input type="file" onChange={handleFileSelect} />
+        <br></br>
+        <Button variant="secondary" onClick={processFile}>Process LAS file</Button>{' '}
         <Button variant="success">Plot crossplot</Button>{' '}
         <Button variant="danger">Cluster crossplot</Button>{' '}
         </div>
