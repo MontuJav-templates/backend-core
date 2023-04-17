@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import UploadButton from './buttons/UploadButton';
 
 function FourButtons() {
-    const handleClick = () => {
-        console.log('Hello, world!');
+    const [selectedFile, setSelectedFile] = useState(null);
+  
+    const handleFileSelect = (file) => {
+      setSelectedFile(file);
+      console.log(selectedFile);
+      // TODO: Upload file
     };
 
     return (
         <div>
-        <Button variant="primary" onClick={handleClick}>Upload LAS file</Button>{' '}
+        <UploadButton onFileSelect={handleFileSelect} />
         <Button variant="secondary">Process LAS file</Button>{' '}
         <Button variant="success">Plot crossplot</Button>{' '}
         <Button variant="danger">Cluster crossplot</Button>{' '}
