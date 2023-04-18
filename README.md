@@ -3,12 +3,12 @@ Repository to develop the core of our TT project.
 
 The following order will be followed to start developing this system.
 
-- [ ] Intialize project
-- [ ] Start developing
-    - [ ] Start LAS files uploading
+- [x] Intialize project
+- [x] Start developing
+    - [x] Start LAS files uploading
     - [ ] Start DB designing
-- [ ] LAS files uploading
-- [ ] Processing LAS files
+- [x] LAS files uploading
+- [x] Processing LAS files
 - [ ] Plotting crossplots
 - [ ] Clustering crossplots
 
