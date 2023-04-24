@@ -9,7 +9,7 @@ The following order will be followed to start developing this system.
     - [ ] Start DB designing
 - [x] LAS files uploading
 - [x] Processing LAS files
-- [ ] Plotting crossplots
+- [x] Plotting crossplots
 - [ ] Clustering crossplots
 
 This TODO list can change and some other implementation should be also carried out (like DB designing, architecture designing, tech docs, etc.)
